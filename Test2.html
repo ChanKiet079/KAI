@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Concert Tickets</title>
+    <link rel="stylesheet" href="../ASM1/Test2.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Music Concert Tickets</h1>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li><a href="Test2.html">Home</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="Video.html">Video</a></li>
+                <li><a href="Setting.html">Setting</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <a href="../ASM1/login.html" id="login-btn">Login</a>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+    <section id="hero-video">
+        <video autoplay muted loop>
+            <source src="photo/y2mate.com - TAYLOR SWIFT  THE ERAS TOUR Concert Film Official Trailer_1440p.mp4" type="video/mp4">
+            <p> FAMOUS CONCERT</p>
+        </video>
+        <div class="video-caption">FAMOUS CONCERT</div>
+    </section>
+    <main>
+        <section id="artists">
+            <h2>Famous Artists</h2>
+            <div class="country-section">
+                <div class="country-header">American</div>    
+                <div class="artist-row">
+                    <div class="artist" id="billie-eilish">
+                        <h3>Billie Eilish</h3>
+                        <img src="photo/BillieEilishO2160622_(11_of_45)_(52152972296)_(cropped_2).jpg" alt="Billie Eilish">
+                        <p>Billie Eilish has won multiple Grammy Awards, including Album of the Year for "When We All Fall Asleep, Where Do We Go?" and Record of the Year for "Bad Guy." She has also received American Music Awards, Billboard Music Awards, and Brit Awards.</p>
+                        <p>Price Range: $25 - $125</p>
+                        <button onclick="buyTickets('Billie Eilish')">Buy Tickets</button>
+                    </div>
+                    <div class="artist" id="katy-perry">
+                        <h3>Katy Perry</h3>
+                        <img src="photo/Katy_Perry_for_Vogue_Magazine,_2023.png" alt="Katy Perry">
+                        <p>Katy Perry has won several American Music Awards, Billboard Music Awards, and MTV Video Music Awards. She has also received a Brit Award and holds multiple Guinness World Records.</p>
+                        <p>Price Range: $25 - $125</p>
+                        <button onclick="buyTickets('Katy Perry')">Buy Tickets</button>
+                    </div>
+                    <div class="artist" id="taylor-swift">
+                        <h3>Taylor Swift</h3>
+                        <img src="photo/Taylor_Swift.webp" alt="Taylor Swift">
+                        <p>Taylor Swift has won numerous Grammy Awards, including Album of the Year for "Fearless" and "1989." She has also received American Music Awards, Billboard Music Awards, and Country Music Association Awards.</p>
+                        <p>Price Range: $25 - $125</p>
+                        <button onclick="buyTickets('Taylor Swift')">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header">Canada</div>
+                <div class="artist-row">  
+                    <div class="artist" id="justin-bieber">
+                        <h3>Justin Bieber</h3>
+                        <img src="photo/Justin_Bieber_in_2015.jpg" alt="Justin Bieber">
+                        <p>Justin Bieber has won several Grammy Awards, including Best Dance Recording for "Where Are Ü Now." He has also received American Music Awards, Billboard Music Awards, and MTV Europe Music Awards.</p>
+                        <p>Price Range: $25 - $125</p>
+                        <button onclick="buyTickets('Justin Bieber')">Buy Tickets</button>
+                    </div>  
+                    <div class="artist" id="drake">
+                        <h3>Drake</h3>
+                        <img src="photo/drake2.jpg" alt="Drake">
+                        <p>Drake, born October 24, 1986, in Toronto, is a renowned Canadian rapper and singer. He gained fame with his 2009 mixtape "So Far Gone" and is known for hits like "Hotline Bling" and "God's Plan." Drake also co-founded OVO Sound and the OVO clothing line.</p>
+                        <p>Price Range: $25 - $125</p>
+                        <button onclick="buyTickets('Drake')">Buy Tickets</button>
+                    </div> 
+                    <div class="artist" id="céline-dion">
+                        <h3>Céline Dion</h3>
+                        <img src="photo/230px-Céline_Dion_2012.jpg" alt="Céline Dion">
+                        <p>Celine Dion, born March 30, 1968, in Quebec, Canada, is a globally renowned singer known for her powerful voice. Famous for "My Heart Will Go On" from "Titanic," she is one of the best-selling artists ever and has won multiple Grammy Awards.</p>
+                        <p>Price Range: $25 - $125</p>
+                        <button onclick="buyTickets('Céline Dion')">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header">Brazil</div>
+                <div class="artist-row">  
+                    <div class="artist" id="alan-walker">
+                        <h3>Alan Walker</h3>
+                        <img src="photo/Alan_Walker_(cropped).jpg" alt="Alan Walker">
+                        <p>Alan Walker has received several awards, including MTV Europe Music Awards and International Dance Music Awards. He is known for his hit single "Faded," which has billions of views on YouTube.</p>
+                        <p>Price Range: $25 - $125</p>
+                        <button onclick="buyTickets('Alan Walker')">Buy Tickets</button>
+                    </div>
+                    <div class="artist" id="dj-alok">
+                        <h3>DJ Alok</h3>
+                        <img src="photo/dj.jpg" alt="DJ Alok">
+                        <p>DJ Alok has received international acclaim with awards such as the International Dance Music Award. He has been ranked among the top DJs in the world by DJ Mag.</p>
+                        <p>Price Range: $25 - $125</p>
+                        <button onclick="buyTickets('DJ Alok')">Buy Tickets</button>
+                    </div>
+                    <div class="artist" id="claudia-leitte">
+                        <h3>Claudia Leitte</h3>
+                        <img src="photo/cad.png" alt="Claudia Leitte">
+                        <p>Claudia Leitte, born July 10, 1980, in Brazil, is a famous Brazilian singer. She rose to fame with Babado Novo and later launched a successful solo career, known for hits like "Exttravasa" and "Largadinho."</p>
+                        <p>Price Range: $25 - $125</p>
+                        <button onclick="buyTickets('Claudia Leitte')">Buy Tickets</button>
+                    </div>
+                </div> 
+        </section>
+    </main>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <button class="facebook">Login with Facebook</button>
+            <button class="email">Login with Email</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <div class="footerNav">
+                <ul><li><a href="">HOME</a></li>
+                    <li><a href="">FORUM</a></li>
+                    <li><a href="">DECOR</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">TS00661</span></p>
+        </div>
+    </footer>
+
+</div>
+    <div id="overlay"></div>
+</body>
+</html>
